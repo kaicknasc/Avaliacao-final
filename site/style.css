@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+    --black: #0D0D0D;
+    --white: #F2F2F2;
+    --gray: #212121;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    /* Reset */
+}
+
+html, body{
+    scroll-behavior: smooth;
+    /* Rolagem suave */
+    color: var(--black);
+    background-color: var(--gray);
+    /* Cores */
+    width: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    /* Posicionamento */
+    backdrop-filter: blur(1.5px);
+    /* Filtro de desfoque */
+    top: 0;
+    left: 0;
+    position: sticky;
+    z-index: 999;
+    /* Posição */
+    box-shadow: 0 0 15px #00000007;
+    /* Sombra */
+    color: var(--gray);
+    /* Cores */
+}
+
+.text-header p {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.text-header p::first-letter {
+    font-size: 40px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Posicionamento */
+    margin-right: 20px;
+}
+
+.nav a {
+    color: var(--white);
+    /* Cores */
+    font-size: 2rem;
+    /* Fonte */
+}
+
+.section01 {
+    background-image: url(images/background-final.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 35px;
+    /* Posição da imagem do fundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-s1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.image-s1 img{
+    width: 700px;
+}
+
+.box-text {
+    width: 580px;
+    /* Tamanho */
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    flex-direction: column;
+    /* Posicionamento */
+    font-size: 18px;
+    /* Fonte */
+}
+
+.button-s1 button {
+    margin-top: 15px;
+    /* Margem */
+    width: 200px;
+    height: 70px;
+    /* Tamanho */
+    background-color: var(--gray);
+    color: var(--white);
+    /* Cores */
+    border-radius: 40px;
+    /* Bordas */
+    font-size: 18px;
+    /* Fonte */
+    cursor: pointer;
+    /* Cursor */
+    transition: 00.60s ease;
+    /* Transição */
+}
+
+.button-s1 button:hover {
+    background-color: var(--black);
+    color: var(--white);
+    /* Cores da transição */
+}
